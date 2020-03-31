@@ -28,6 +28,7 @@ body {
 
 .top_nav_left p:hover, .bottom_nav .links a:hover {
     color: #1575FF;
+    transition-duration: .4s; 
 }
 
 @media screen and (max-width: 580px) {
