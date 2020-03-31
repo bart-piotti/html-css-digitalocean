@@ -1,0 +1,223 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background-color: white;
+}
+
+.top_nav {
+    height: 50px;
+}
+
+.top_nav_left, .top_nav_right {
+    padding: 15px;
+    color: rgb(91, 105, 135);
+    font-weight: bold;
+    float: left;
+}
+
+#covid {
+    display: none;
+}
+
+.top_nav_left p {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.top_nav_left p:hover, .bottom_nav .links a:hover {
+    color: #1575FF;
+}
+
+@media screen and (max-width: 580px) {
+    .top_nav_left p{
+        display: none;
+    }
+    #covid{
+        display: inline-block;
+    }
+}
+.top_nav_left span {
+    background-color: #00D7D2;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.top_nav_right {
+    float: right;
+}
+
+.top_nav_right a, .bottom_nav .links a {
+    text-decoration: none;
+    padding-right: 10px;
+    color: inherit;
+}
+
+.bottom_nav {
+    border-top: 1px solid rgba(91, 105, 135, .3);
+    height: 70px;
+    padding: 20px 10px;
+}
+
+.bottom_nav img {
+    width: 180px;
+}
+
+.bottom_nav .links {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.bottom_nav .links a {
+    font-size: 14px;
+    padding-right: 30px;
+    color: rgb(3,27,78);
+    font-weight: bold;
+}
+
+.bottom_nav button {
+    float: right;
+    background-color: white;
+    color: #1575FF;
+    border: 1px solid #1575FF;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-right: 25px;
+}
+.bottom_nav button:hover {
+    background-color: #1575FF;
+    color: white;
+    transition-duration: .7s;
+}
+
+section {
+    padding: 150px 50px;
+    background: rgb(0,73,255)
+    url('https://365psd.com/images/previews/b0c/icon-pattern-backgrounds-53906.jpg');
+}
+
+.jumbo {
+    margin-bottom: 50px;
+    padding-top: 75px;
+}
+@media (min-width: 1200px) {
+    #sec_1 {
+        padding-top: 250px;
+    }
+    .jumbo h1 {
+        font-size: 65px;
+    }
+}
+@media (max-width: 991px) {
+    #sec_1 {
+        padding-top: 30px;
+    }
+}
+.jumbo h1 {
+    font-size: 52px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.jumbo p {
+    color: rgba(255, 255, 255, .7);
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+#sec_1 form {
+    background-color: white;
+    padding: 35px 30px;
+    border-radius: 5px;
+}
+
+#sec_1 form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+#sec_1 form input:focus {
+    border: 1px solid #1575FF;
+    border-radius: 5px;
+}
+:focus {
+    outline: 0;
+}
+
+#sec_1 form input::placeholder{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(3,27,78,.8)
+}
+
+#sec_1 form p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(3,27,78);
+    padding-bottom: 30px;
+}
+
+#sec_1 form button {
+    padding: 15px 0px;
+    background-color: #1575FF;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}
+#sec_1 form button:hover{
+    background-color: rgba(3,27,78,.7);
+    transition-duration: 0.7s;
+}
+
+#sec_1 form .signup {
+    font-size: 16px;
+    color: #5b6987;
+    padding: 20px 0;
+}
+
+#sec_1 form .social_btn img{
+    width: 20px;
+    margin-right: 20px;
+}
+
+#sec_1 form .social_btn {
+    padding: 10px;
+    border: 1px solid rgba(21,117,255, .2);
+    border-radius: 5px;
+    color: rgb(3,27,78);
+    background-color: rgba(21,117,255, .05);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#sec_1 form .social_btn:hover {
+    background-color: rgba(21,117,255, .15);
+}
+
+#sec_1 form #terms_of_service {
+    padding-top: 30px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1200px) {
+    #sec_1 {
+        padding-top: 250px;
+    }
+    .jumbo h1 {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 991px) {
+    #sec_1 form {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
