@@ -98,6 +98,23 @@ section {
     url('https://365psd.com/images/previews/b0c/icon-pattern-backgrounds-53906.jpg');
 }
 
+#logo {
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+#burger {
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    color: white;
+}
+#logo img, #burger img {
+    width: 100%;
+}
+
 .jumbo {
     margin-bottom: 50px;
     padding-top: 75px;
