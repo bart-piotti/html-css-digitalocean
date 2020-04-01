@@ -432,9 +432,10 @@ a {
 
 .wrap_img img {
     width: 100%;
+    cursor: grab;
 }
 
-#gallery .row_relative p {
+#gallery .img_caption {
     font-size: 16px;
     line-height: 27px;
     padding-top: 15px;
