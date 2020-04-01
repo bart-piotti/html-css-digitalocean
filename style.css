@@ -116,7 +116,7 @@ a {
 
 #sec_jumbo_form {
     padding: 150px 50px;
-    background-color: black;
+    background-color: blue;
     background-image: url('https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,9 +144,10 @@ a {
     margin-bottom: 50px;
     padding-top: 125px;
 }
-@media (min-width: 1200px) {
-    #sec_jumbo_form {
-        padding-top: 250px;
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .jumbo {
+        padding-top: 50px;
     }
     .jumbo h1 {
         font-size: 65px;
@@ -161,7 +162,6 @@ a {
     font-size: 52px;
     font-weight: bold;
     color: white;
-    text-align: center;
 }
 
 .jumbo p {
@@ -310,7 +310,7 @@ a {
     font-weight: bold;
 }
 
-#vertical_menu h2, #gallery h3, #business h3 {
+#vertical_menu h2, #gallery h3, #business h3, #teams h3 {
     font-size: 36px;
     font-weight: bold;
     color: rgb(3, 27, 78);
@@ -399,7 +399,7 @@ a {
     }
 }
 
-#gallery {
+#gallery, #teams {
     background-color: rgb(243,245,249);
     padding: 50px 0;
 }
@@ -409,7 +409,7 @@ a {
     padding: 10px 0;
 }
 
-#gallery span {
+#gallery span, #teams span {
     font-size: 80px;
     position: absolute;
     top: 50%;
@@ -418,15 +418,15 @@ a {
     text-align: center;
 }
 
-#gallery span:nth-of-type(1) {
+#gallery span:nth-of-type(1), #teams span:nth-of-type(1) {
     color: rgba(3, 27, 78, 0.5);
 }
 
-#gallery span:nth-of-type(2) {
+#gallery span:nth-of-type(2), #teams span:nth-of-type(2) {
     color: rgba(3, 27, 78, 1);
 }
 
-#gallery span:nth-of-type(2):hover {
+#gallery span:nth-of-type(2):hover, #teams span:nth-of-type(2):hover {
     color: #1575FF;
 }
 
@@ -494,4 +494,113 @@ a {
     font-size: 15px;
     letter-spacing: .8px;
     text-align: left;
+}
+
+#data_centers {
+    background: rgba(3, 27, 78, 1) url('https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg');
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+#data_centers h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding: 50px;
+    letter-spacing: -.9px;
+}
+
+#data_centers span p{
+    color: white;
+    margin-bottom: 0;
+}
+
+#data_centers span {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#data_centers .bimbo_speciale {
+    border-bottom: 0;
+}
+#data_centers span .dc_code {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#data_centers span .dc_city {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#data_centers span a p{
+    color: #00d7d2;
+    font-weight: bold;
+}
+
+#data_centers span a p:hover {
+    color: rgb(0,95,206);
+}
+#data_centers .row:nth-of-type(2) div:nth-of-type(1) {
+    padding-bottom: 50px;
+}
+
+#teams .row_relative div {
+    background-color: white;
+    cursor: grab;
+    padding: 50px 0;
+}
+#teams .row_relative div img {
+    margin-bottom: 30px;
+}
+#teams .row_relative div p:nth-of-type(1) {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: rgba(3, 27, 78, .7);
+    padding: 15px;
+}
+#teams .row_relative div p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0,0,0,.7);
+}
+
+#teams .row_relative div a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1575FF;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    #teams .container, #gallery .container{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+#get_started {
+    padding: 50px 0;
+    background-image: url('https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#get_started span {
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+}
+
+#get_started a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: white;
+    color: #1575FF;
+}
+
+#get_started .get_started_btn {
+    margin-top: 40px;
 }
