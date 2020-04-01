@@ -1,6 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
 .navbar {
     background-color: white;
 }
@@ -102,7 +114,7 @@ body {
     transition-duration: .7s;
 }
 
-#sec_1 {
+#sec_jumbo_form {
     padding: 150px 50px;
     background-color: black;
     background-image: url('https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg');
@@ -133,7 +145,7 @@ body {
     padding-top: 125px;
 }
 @media (min-width: 1200px) {
-    #sec_1 {
+    #sec_jumbo_form {
         padding-top: 250px;
     }
     .jumbo h1 {
@@ -141,7 +153,7 @@ body {
     }
 }
 @media (max-width: 991px) {
-    #sec_1 {
+    #sec_jumbo_form {
         padding-top: 30px;
     }
 }
@@ -158,13 +170,13 @@ body {
     line-height: 1.3;
 }
 
-#sec_1 form {
+#sec_jumbo_form form {
     background-color: white;
     padding: 35px 30px;
     border-radius: 5px;
 }
 
-#sec_1 form input {
+#sec_jumbo_form form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -172,7 +184,7 @@ body {
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
 }
-#sec_1 form input:focus {
+#sec_jumbo_form form input:focus {
     border: 1px solid #1575FF;
     border-radius: 5px;
 }
@@ -180,43 +192,43 @@ body {
     outline: 0;
 }
 
-#sec_1 form input::placeholder{
+#sec_jumbo_form form input::placeholder{
     font-size: 18px;
     font-weight: 300;
     color: rgba(3,27,78,.8)
 }
 
-#sec_1 form p {
+#sec_jumbo_form form p {
     font-size: 30px;
     font-weight: bold;
     color: rgb(3,27,78);
     padding-bottom: 30px;
 }
 
-#sec_1 form button {
+#sec_jumbo_form form button {
     padding: 15px 0px;
     background-color: #1575FF;
     color: white;
     font-weight: bold;
     border: 0;
 }
-#sec_1 form button:hover{
+#sec_jumbo_form form button:hover{
     background-color: rgba(3,27,78,.7);
     transition-duration: 0.7s;
 }
 
-#sec_1 form .signup {
+#sec_jumbo_form form .signup {
     font-size: 16px;
     color: #5b6987;
     padding: 20px 0;
 }
 
-#sec_1 form .social_btn img{
+#sec_jumbo_form form .social_btn img{
     width: 20px;
     margin-right: 20px;
 }
 
-#sec_1 form .social_btn {
+#sec_jumbo_form form .social_btn {
     padding: 10px;
     border: 1px solid rgba(21,117,255, .2);
     border-radius: 5px;
@@ -226,18 +238,18 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
-#sec_1 form .social_btn:hover {
+#sec_jumbo_form form .social_btn:hover {
     background-color: rgba(21,117,255, .15);
 }
 
-#sec_1 form #terms_of_service {
+#sec_jumbo_form form #terms_of_service {
     padding-top: 30px;
     font-size: 13px;
     color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 1200px) {
-    #sec_1 {
+    #sec_jumbo_form {
         padding-top: 250px;
     }
     .jumbo h1 {
@@ -246,7 +258,7 @@ body {
 }
 
 @media screen and (min-width: 720px) and (max-width: 991px) {
-    #sec_1 form {
+    #sec_jumbo_form form {
         width: 70%;
         margin: 0 15%;
     }
@@ -296,4 +308,93 @@ body {
     font-size: 17px;
     cursor: pointer;
     font-weight: bold;
+}
+
+#vertical_menu h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(3, 27, 78);
+}
+
+#vertical_menu .sottotitolo {
+    font-size: 20px;
+    color: rgba(3,27,78,.7);
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+#vertical_menu .container .row:first-child {
+    margin-bottom: 50px;
+}
+#vertical_menu ul li{
+    padding: 17px 10px 17px 30px;
+    border-left: 2px solid lightgrey;
+}
+
+#vertical_menu ul li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(3,27,78,.5);
+    line-height: 17px;
+}
+
+#vertical_menu ul li:nth-child(3) a{
+    color: rgb(3, 27, 78);
+}
+
+#vertical_menu ul li:nth-child(3) {
+    border-left: 2px solid #1575FF;
+}
+
+/* #vertical_menu ul li:hover #vertical_menu ul li a{
+    color: rgba(3,27,78,.5);
+} */
+
+#vertical_menu .riquadro img {
+    width: 60px;
+}
+
+#vertical_menu .riquadro h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(3, 27, 78);
+}
+
+#vertical_menu .riquadro p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(3, 27, 78,.7);
+}
+
+#vertical_menu ul {
+    float: left;
+}
+
+#vertical_menu .riquadro {
+    float: left;
+}
+
+#vertical_menu .riquadro_2 {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+    #vertical_menu .riquadro_2 {
+        margin-bottom: 50px;
+    }
+
+    #vertical_menu ul {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #vertical_menu ul {
+        padding-left: 10px;
+    }
+
+    #vertical_menu .riquadro {
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
