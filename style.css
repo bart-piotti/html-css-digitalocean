@@ -310,13 +310,13 @@ a {
     font-weight: bold;
 }
 
-#vertical_menu h2 {
+#vertical_menu h2, #gallery h3 {
     font-size: 36px;
     font-weight: bold;
     color: rgb(3, 27, 78);
 }
 
-#vertical_menu .sottotitolo {
+.sottotitolo {
     font-size: 20px;
     color: rgba(3,27,78,.7);
     line-height: 30px;
@@ -397,4 +397,59 @@ a {
         margin-bottom: 15px;
         text-align: center;
     }
+}
+
+#gallery {
+    background-color: rgb(243,245,249);
+    padding: 50px 0;
+}
+
+.row_relative {
+    position: relative;
+    padding: 10px 0;
+}
+
+#gallery span {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    text-align: center;
+}
+
+#gallery span:nth-of-type(1) {
+    color: rgba(3, 27, 78, 0.5);
+}
+
+#gallery span:nth-of-type(2) {
+    color: rgba(3, 27, 78, 1);
+}
+
+#gallery span:nth-of-type(2):hover {
+    color: #1575FF;
+}
+
+.wrap_img img {
+    width: 100%;
+}
+
+#gallery .row_relative p {
+    font-size: 16px;
+    line-height: 27px;
+    padding-top: 15px;
+    color: rgba(3,27,78,.7);
+    letter-spacing: .8px;
+}
+
+.dots i:first-of-type {
+    font-weight: bold;
+}
+
+.dots i {
+    color: #1575FF;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
 }
