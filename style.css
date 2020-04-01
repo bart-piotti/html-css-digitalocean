@@ -269,7 +269,7 @@ body {
 
 @media (max-width: 991px) {
     #loghi span {
-        height: 175px;
+        height: 130px;
     }
     #loghi span:last-of-type img {
         height: 50%;
