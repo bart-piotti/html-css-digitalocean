@@ -33,6 +33,7 @@ a {
 .top_nav_left {
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* #covid {
@@ -603,4 +604,63 @@ a {
 
 #get_started .get_started_btn {
     margin-top: 40px;
+}
+
+footer {
+    background-color: rgba(3, 27, 78, 1);
+    padding: 50px 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer h5 {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer li a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+footer li a:hover {
+    color: white;
+    transition-duration: .5s;
+}
+
+footer span, footer p {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+footer span:nth-of-type(2) {
+    text-align: right;
+    line-height: 60px;
+    font-size: 23px;
+}
+
+footer span:nth-of-type(2) i {
+    padding: 3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer span:nth-of-type(2) i:hover {
+    color: white;
+    transition-duration: .4s;
+    transform: scale(1.3);
+}
+
+@media (max-width: 992px) {
+    footer span:nth-of-type(1) {
+        text-align: center;
+    }
 }
