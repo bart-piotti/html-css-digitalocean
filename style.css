@@ -334,7 +334,6 @@ a {
 
 #vertical_menu ul li a {
     font-size: 18px;
-    font-weight: bold;
     color: rgba(3,27,78,.5);
     line-height: 17px;
 }
@@ -349,6 +348,7 @@ a {
 
 #vertical_menu ul li:hover a{
     color: rgb(3, 27, 78);
+    transition-duration: .7s;
 }
 
 
