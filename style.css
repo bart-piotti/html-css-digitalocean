@@ -425,6 +425,7 @@ a {
 
 #gallery span:nth-of-type(2), #teams span:nth-of-type(2) {
     color: rgba(3, 27, 78, 1);
+    right: 0;
 }
 
 #gallery span:nth-of-type(2):hover, #teams span:nth-of-type(2):hover {
