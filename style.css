@@ -347,9 +347,10 @@ a {
     border-left: 2px solid #1575FF;
 }
 
-/* #vertical_menu ul li:hover #vertical_menu ul li a{
-    color: rgba(3,27,78,.5);
-} */
+#vertical_menu ul li:hover + a {
+    color: rgb(3, 27, 78);
+}
+
 
 #vertical_menu .riquadro img {
     width: 60px;
